@@ -1,0 +1,29 @@
+<!doctype html>
+<html class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Fast LaTeX 2</title>
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self' 'unsafe-inline' https://polyfill.io https://cdn.jsdelivr.net https://cdn.skypack.dev https://html2canvas.hertzen.com; img-src 'self' data:; style-src 'self' 'unsafe-inline'; font-src 'self' https://cdn.jsdelivr.net;"
+    />
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script
+      id="MathJax-script"
+      async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+      defer
+    ></script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [ ['$','$'], ["\\(","\\)"] ],processEscapes: true}});
+    </script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
