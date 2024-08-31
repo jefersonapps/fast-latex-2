@@ -44,11 +44,12 @@ export function ColorPicker({ color, onChange, label }: ColorPickerProps) {
             <Sketch color={color} onChange={handleColorChange} />
 
             <button
-              className="flex gap-2 items-center bg-violet-500 text-white rounded px-3 py-2 mx-auto"
+              className="flex gap-2 items-center bg-violet-800 hover:bg-violet-900 transition-colors text-white rounded-md px-3 py-2 mx-auto"
               onClick={handleGetColor}
             >
               {' '}
-              <Pipette strokeWidth={2.5} /> <span className="font-semibold">Cor da tela</span>
+              <Pipette strokeWidth={2.5} size={20} />{' '}
+              <span className="font-semibold">Cor da tela</span>
             </button>
           </Popover.Content>
         </Popover.Portal>

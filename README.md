@@ -1,13 +1,13 @@
 # Fast LaTeX 2
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/jefersonapps/fast-latex/main/public/icon.png" alt="Fast Latex Icon" width="300"/>
+  <img src="https://raw.githubusercontent.com/jefersonapps/fast-latex-2/main/resources/icon.png" alt="Fast Latex Icon" width="300"/>
 </p>
 
 ## Demonstração
 
 <p align="center">
-  <img src="./public/demonstration.png" alt="Demonstração do Fast Latex" width="600"/>
+  <img src="./public/Demonstração.png" alt="Demonstração do Fast Latex" width="600"/>
 </p>
 
 ## Introdução

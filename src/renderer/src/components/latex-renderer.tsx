@@ -80,7 +80,7 @@ export function LatexRenderer({
           onClick={handleCaptureScreen}
           title="Capturar imagem"
           aria-label="Capturar imagem"
-          className="absolute top-3 right-3 bg-gray-200 dark:bg-zinc-900 p-2 rounded-full"
+          className="absolute top-3 right-3 bg-gray-200 dark:bg-zinc-900 hover:bg-gray-300 dark:hover:bg-zinc-800 transition-colors p-2 rounded-full"
         >
           <Download />
         </button>
