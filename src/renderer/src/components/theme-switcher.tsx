@@ -9,14 +9,14 @@ interface ThemeSwitcherProps {
 export const ThemeSwitcher = ({ theme, setThemePreference }: ThemeSwitcherProps) => {
   const getIcon = (): JSX.Element => {
     if (theme === 'dark') {
-      return <Moon className="w-5 h-5 shrink-0 text-white" />
+      return <Moon className="size-4 shrink-0 text-white" />
     } else if (theme === 'light') {
-      return <Sun className="w-5 h-5 shrink-0 text-black" />
+      return <Sun className="size-4 shrink-0 text-black" />
     } else {
       return window.matchMedia('(prefers-color-scheme: dark)').matches ? (
-        <Moon className="w-5 h-5 shrink-0 text-white" />
+        <Moon className="size-4 shrink-0 text-white" />
       ) : (
-        <Sun className="w-5 h-5 shrink-0 text-black" />
+        <Sun className="size-4 shrink-0 text-black" />
       )
     }
   }
@@ -27,7 +27,7 @@ export const ThemeSwitcher = ({ theme, setThemePreference }: ThemeSwitcherProps)
         <button
           aria-label="Tema"
           title="Tema"
-          className="flex items-center justify-center w-10 h-10 bg-gray-200 rounded-full dark:bg-zinc-900 hover:bg-gray-300 dark:hover:bg-zinc-800 focus:outline-none transition-colors"
+          className="flex items-center justify-center p-2 bg-gray-200 rounded-full dark:bg-zinc-900 hover:bg-gray-300 dark:hover:bg-zinc-800 focus:outline-none transition-colors"
         >
           {getIcon()}
         </button>

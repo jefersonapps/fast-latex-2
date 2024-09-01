@@ -30,7 +30,7 @@ export function Editor({ latex, setLatex, theme, currentTheme, setThemePreferenc
         onChange={setLatex}
         width="100%"
         height="100%"
-        fontSize={20}
+        fontSize={16}
         showPrintMargin={true}
         showGutter={true}
         highlightActiveLine={false}

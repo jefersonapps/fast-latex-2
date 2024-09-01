@@ -46,7 +46,8 @@ ipcMain.handle('capture-page', async (_, rect) => {
 
     new Notification({
       title: NOTIFICATION_TITLE,
-      body: NOTIFICATION_BODY
+      body: NOTIFICATION_BODY,
+      icon: icon,
     }).show()
   } catch (err) {
     console.error('Erro ao capturar a página:', err)
@@ -55,7 +56,8 @@ ipcMain.handle('capture-page', async (_, rect) => {
 
     new Notification({
       title: ERROR_TITLE,
-      body: ERROR_BODY
+      body: ERROR_BODY,
+      icon: icon
     }).show()
   }
 })
@@ -133,7 +135,7 @@ function createNewWindow() {
 }
 
 app.whenReady().then(() => {
-  electronApp.setAppUserModelId('com.electron')
+  electronApp.setAppUserModelId('Fast LaTeX 2')
 
   app.on('browser-window-created', (_, window) => {
     optimizer.watchWindowShortcuts(window)

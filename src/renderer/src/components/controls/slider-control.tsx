@@ -12,7 +12,7 @@ interface SliderControlProps {
 export function SliderControl({ value, onChange, label, min, max, step }: SliderControlProps) {
   return (
     <div>
-      <label className="block text-black dark:text-white font-semibold">{label}:</label>
+      <label className="block text-black dark:text-white font-semibold text-sm mb-2">{label}:</label>
       <Slider.Root
         className="relative flex items-center w-full h-8"
         value={[value]}

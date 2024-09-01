@@ -27,7 +27,7 @@ export function ColorPicker({ color, onChange, label }: ColorPickerProps) {
 
   return (
     <div>
-      <label className="block text-black dark:text-white font-semibold">{label}:</label>
+      <label className="block text-black dark:text-white font-semibold text-sm mb-2">{label}:</label>
       <Popover.Root open={open} onOpenChange={setOpen}>
         <Popover.Trigger asChild>
           <button
